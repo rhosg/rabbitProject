@@ -1,10 +1,11 @@
-package com.sparta.rho;
+package com.sparta.rho.animals;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Reporter {
+public class AnimalManager {
     public static List<Rabbit> rabbits = new ArrayList<>();
     public static List<Fox> foxes = new ArrayList<>();
     static List<Rabbit> newBabyRabbits = new ArrayList<>();

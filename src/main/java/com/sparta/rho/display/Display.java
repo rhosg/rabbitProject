@@ -1,10 +1,9 @@
 package com.sparta.rho.display;
 
-import com.sparta.rho.Rabbit;
-import com.sparta.rho.Reporter;
+import com.sparta.rho.animals.AnimalManager;
 
 public class Display {
-    Reporter reporter = new Reporter();
+    AnimalManager animalManager = new AnimalManager();
 
     public void report(){
 

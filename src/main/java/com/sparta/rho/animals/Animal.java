@@ -1,4 +1,4 @@
-package com.sparta.rho;
+package com.sparta.rho.animals;
  class Animal {
 
         int age;
