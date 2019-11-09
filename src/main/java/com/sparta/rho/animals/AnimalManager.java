@@ -12,13 +12,16 @@ public class AnimalManager {
     static List<Rabbit> deadRabbits = new ArrayList<>();
     static List<Rabbit> deadEatenRabbits= new ArrayList<>();
     static List<Fox> newBabyFoxes = new ArrayList<>();
-    private int months = 0;
-    private int males = 0;
-    private int females = 0;
 
 
-    public void spawnRabbits() {
+
+
+    public void spawnRabbits(int totalTime) {
         startingRabbits();
+        int males = 0;
+         int females = 0;
+        int months = 0 ;
+
         for (Rabbit rabbit : rabbits) {
 
             if (rabbit.getAge() >= 3 && rabbit.getGender() == 'F') {
@@ -95,7 +98,7 @@ public class AnimalManager {
     public List<Fox> breedingFoxes() {
         Random random = new Random();
         List<Fox> babyFoxes = new ArrayList<>();
-        int birthRate = random.nextInt(10) + 1;
+        int birthRate = random.nextInt(2) + 1;
         for (int i = 0; i < birthRate; i++) {
             char gender;
             if (random.nextBoolean()) {
