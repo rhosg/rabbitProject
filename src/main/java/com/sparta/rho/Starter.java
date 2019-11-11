@@ -18,7 +18,7 @@ public class Starter {
         a = in.nextInt();
         AnimalManager animalManager = new AnimalManager();
         while (true){
-            animalManager.spawnRabbits();
+            animalManager.spawnRabbits(a);
             try{
                 Thread.sleep(1000);
             }catch (InterruptedException e){

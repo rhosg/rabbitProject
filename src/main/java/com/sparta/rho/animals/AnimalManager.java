@@ -6,12 +6,12 @@ import java.util.List;
 import java.util.Random;
 
 public class AnimalManager {
-    public static List<Rabbit> rabbits = new ArrayList<>();
-    public static List<Fox> foxes = new ArrayList<>();
-    static List<Rabbit> newBabyRabbits = new ArrayList<>();
-    static List<Rabbit> deadRabbits = new ArrayList<>();
-    static List<Rabbit> deadEatenRabbits= new ArrayList<>();
-    static List<Fox> newBabyFoxes = new ArrayList<>();
+    private static List<Rabbit> rabbits = new ArrayList<>();
+    private static List<Fox> foxes = new ArrayList<>();
+    private static List<Rabbit> newBabyRabbits = new ArrayList<>();
+    private static List<Rabbit> deadRabbits = new ArrayList<>();
+    private static List<Rabbit> deadEatenRabbits= new ArrayList<>();
+    private static List<Fox> newBabyFoxes = new ArrayList<>();
 
 
 
@@ -62,7 +62,9 @@ public class AnimalManager {
         }
         System.out.println("Number of rabbits: " + rabbits.size() + " Months: " + months + " Males: " + males + " Females: " + females+ " Number of rabbits eaten: " + deadEatenRabbits.size()
         + " Number of foxes: " + foxes.size());
-
+ if (months == totalTime){
+     //Print it out
+ }
         months++;
     }
 
